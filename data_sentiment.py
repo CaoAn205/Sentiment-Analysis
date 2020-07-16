@@ -12,13 +12,12 @@ from sklearn.naive_bayes import MultinomialNB
 wordnet_lemmatizer = WordNetLemmatizer()
 
 file = pd.read_csv(
-    'C:/Users/HP/Desktop/GitHub/Data Analytics (learning and pratising)/Data-Ananlytics-practice/Data-Ananlytics-practice/sentiment_project/dataset01.csv',
+    'C:/Users/HP/PycharmProjects/data_sentiment/Sentiment-Analysis/dataset.csv',
     header=None)
 df = pd.DataFrame(file)
 df = df.drop(columns=0, axis=1)
 df = df.drop([0])
 df.columns = ["Users", "Comments"]
-df = df.iloc[:4999] #Data shape is too large to process
 
 #Clean tags(@switchfoot,...), links(http://..), punctuations, time and make lowercase
 def clean_text_1(text):

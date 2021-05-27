@@ -12,5 +12,6 @@
 ### 4. Hướng dẫn sử dụng: 
 ##### -	Ta mở file và chạy ngrok.exe với lệnh: ngrok http 5000
 ##### -	Sau đó copy link server: https://... dán vào trong phần NGROK_URL ở phần code config.py
+##### - Ngoài ra cần xem lại path của nơi lưu file dataset.csv
 ##### - Sau khi run app.py, ta có thể gửi các văn bản muốn phân loại cảm xúc thông qua tin nhắn
 
